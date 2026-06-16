@@ -13,7 +13,8 @@
 
 <br/>
 
-![Demo](https://placehold.co/900x480/0a0f1e/3b82f6?text=ResearchAI+Demo+Screenshot)
+![Demo](<img width="1861" height="835" alt="Screenshot 2026-06-16 165941" src="https://github.com/user-attachments/assets/a541a6b4-22ca-43aa-96cf-5a3da651824f" />
+)
 
 </div>
 
