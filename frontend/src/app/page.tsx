@@ -101,12 +101,30 @@ export default function Home() {
             display: "inline-block",
             width: "6px", height: "6px",
             borderRadius: "50%",
-            background: loading ? "#f59e0b" : "#22c55e",
-            boxShadow: loading ? "0 0 8px #f59e0b" : "0 0 8px #22c55e",
+            background: loading ? "#f59e0b" : "#f59e0b", // Changed to amber to reflect demo/offline state
+            boxShadow: loading ? "0 0 8px #f59e0b" : "0 0 8px #f59e0b",
           }} />
-          {loading ? "Running agents..." : "All systems operational"}
+          {loading ? "Running agents..." : "Demo Mode / Offline"}
         </div>
       </nav>
+
+      {/* Backend Status Notice Banner */}
+      <div style={{
+        background: "rgba(245, 158, 11, 0.06)",
+        borderBottom: "1px solid rgba(245, 158, 11, 0.2)",
+        padding: "12px 24px",
+        textAlign: "center",
+        fontSize: "13px",
+        color: "#fde047",
+        letterSpacing: "0.02em",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "8px",
+      }}>
+        <span>⚠️</span>
+        <span><strong>Frontend UI Demo Only:</strong> The AI backend agents are not yet deployed. Submitting queries will result in an error.</span>
+      </div>
 
       <main style={{ maxWidth: "900px", margin: "0 auto", padding: "64px 24px 80px" }}>
 
@@ -261,7 +279,12 @@ export default function Home() {
             color: "#fca5a5",
             fontSize: "14px",
             marginBottom: "32px",
-          }}>{error}</div>
+          }}>
+            {error}
+            <div style={{ marginTop: "4px", fontSize: "12px", color: "#f87171", opacity: 0.8 }}>
+              (Note: This is expected because the backend service is currently offline)
+            </div>
+          </div>
         )}
 
         {/* Results */}
