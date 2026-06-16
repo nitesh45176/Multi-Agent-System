@@ -12,8 +12,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 <br/>
-
-![Demo](<img width="1861" height="835" alt="Screenshot 2026-06-16 165941" src="https://github.com/user-attachments/assets/a541a6b4-22ca-43aa-96cf-5a3da651824f" />
+![Demo Screenshot](https://github.com/user-attachments/assets/a541a6b4-22ca-43aa-96cf-5a3da651824f)
 )
 
 </div>
